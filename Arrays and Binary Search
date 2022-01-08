@@ -1,0 +1,62 @@
+Hash Tables: Maps Key to Value for High Efficient Lookup
+array of linked lists and a hash code function.
+
+second way to implement the hash table with a balanced binary search tree. O(log N) look up time.
+
+ArrayList & Resizeable Arrays:
+
+An ArrayList is an array that resizes itself as needed while still providing O(1) access.
+
+StringBuilder:
+
+Implement your own version of StringBuilder HashTable and ArrayList
+
+
+Binary Search: https://www.cs.usfca.edu/~galles/visualization/Search.html
+
+https://visualgo.net/en/heap
+
+Binary Search works on when array are sorted , if we want to find a particular number, we start from the middle, if the itme we want to find is the middle item it means
+when find it, if x < the middle elem we want to find the array that are before the middle elem, otherwise we wnat to search through the array that is after the middle.
+Repeat this process until we find the target x or until when the sub array don't exist anymore.
+
+
+Pseudocode:
+search(array[], left,right,target):
+  while(left <= right)
+  mid = (left + right) /2;
+  if(array[mid] == target):
+    return mid;
+   else if(target < array[mid]):
+    right = mid - 1;
+   else if(target > array[mid]);
+    left = mid + 1
+   
+   return -1;
+   
+ 
+ 
+ java:
+ 
+ public int binarySearch(int array[], int target) {
+  int left = 0;
+  int right = array.length -1;
+  while(left <= right) {
+    int mid = left + (right - left) /2;
+    if(array[mid] == target) {
+      return mid;
+    }
+     else if(target < array[mid]){
+      right = mid - 1;
+    }
+    else{
+      left = mid + 1;
+    }
+  }
+  return -1;
+ }
+
+
+// time complexity if there is n elem in array, split k times each time we split by half of the elem.  n/(2^k) = 1
+// 2^k = n , k = log2N
+ 
