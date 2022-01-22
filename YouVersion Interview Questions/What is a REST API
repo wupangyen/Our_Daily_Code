@@ -1,0 +1,32 @@
+What is a REST API
+
+Also know as RESTful API, is an application programming interface(called API or web API) comforms
+to the constraints of REST architectural style(REST stands for representational state transfer) allows for
+interaction with RESTful web services.
+
+API: set of definitions and protocols for building and integrating application software. a contract between
+an information provider and an information user
+
+the content required by the consumer(is the call)
+the content required by the producer(the response)
+
+example:
+API design for a weather service
+the call: user supply a zip code
+the response: producer reply with high temp and low temp
+
+
+What is REST?
+a set of architectural constraints
+
+client request is made via a RESTful API,
+transfers a representation of the state of the resource to the requester.
+
+This information, or representaion, is delivered in one of several formats via HTTP(HyperText Transfer Protocol):
+
+JSON(Javascript Object Notation), HTML(HyperText Markup Language), Python, PHP
+
+
+
+
+https://www.redhat.com/en/topics/api/what-is-a-rest-api#:~:text=A%20REST%20API%20(also%20known,by%20computer%20scientist%20Roy%20Fielding.
