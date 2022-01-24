@@ -1,0 +1,6 @@
+The percent sign(%)represents zero , one , or multiple characters 
+The underscore sign (_) represents one, single character 
+
+Examples 
+Like operator                 Description 
+Where customerName like 'a%'  finds any values that start with "a"
