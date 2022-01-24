@@ -1,0 +1,2 @@
+Between with IN Example 
+The following SQL statement selects all products with a price between 10 and 20 in addition; do not show products with a CategoryID of 1,2 or3
