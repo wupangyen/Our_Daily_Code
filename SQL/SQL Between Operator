@@ -1,1 +1,18 @@
 Between Text Values Example
+
+selects all products with a ProductName between Carnarvon Tigers and Mozzarella di Giovanni
+
+example:
+select * FROM Products
+Where ProductName Between 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+ORDER BY ProductName
+
+
+Between Dates Example:
+select * from Orders
+where OrderDate Between #07/01/1996# AND #07/31/1996#
+
+/*the other approach for using date in between*/
+
+select * from orders
+where OrderDate Between '1996-07-01' AND '1996-07-31'
