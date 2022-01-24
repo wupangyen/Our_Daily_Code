@@ -1,0 +1,5 @@
+The IN operator is a shorthand for multiple OR conditions 
+
+EXAMPLE: 
+SELECT * FROM Customers
+WHERE Country IN('Germany','France','UK')
