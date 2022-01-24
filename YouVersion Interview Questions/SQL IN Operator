@@ -3,3 +3,10 @@ The IN operator is a shorthand for multiple OR conditions
 EXAMPLE: 
 SELECT * FROM Customers
 WHERE Country IN('Germany','France','UK')
+
+Selects all customers that are from the same countries as the suppliers 
+
+Example:
+
+Select * from Customers
+Where Country In(select Country from Suppliers)
