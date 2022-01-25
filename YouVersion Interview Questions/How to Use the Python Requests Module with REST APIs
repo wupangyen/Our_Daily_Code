@@ -1,0 +1,10 @@
+https://www.nylas.com/blog/use-python-requests-module-rest-apis/
+
+Contents:
+The roles of HTTP,APIs,and REST.  (API Application Programming Interface) (what does application programming interface do)
+(is a web service granting access to the data that can be use in other application via standard HTTP protocol )
+(REpresentational State Transfer Most popular architectural style of APIs for web services)
+How to use Python Requests with REST APIs
+How to authenticate to a REST API
+How to handle HTTP errors with Python Requests
+How to make robust API Requests
