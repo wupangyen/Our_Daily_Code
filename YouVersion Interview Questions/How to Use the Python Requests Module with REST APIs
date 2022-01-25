@@ -8,3 +8,17 @@ How to use Python Requests with REST APIs
 How to authenticate to a REST API
 How to handle HTTP errors with Python Requests
 How to make robust API Requests
+
+
+
+Request:
+
+Request is made up of the following components:
+
+1. Endpoint: The URL that delineates what data you are interacting with
+2. Method - Specifies how you're interacting with the resources located at the provided endpoint. (REST APIs provides methods enable Create, Read Update, Delete(CRUD)Functionality)
+   4 common methods:
+   a. GET- Retrieve data
+   b. PUT - Replace data
+   c. POST - Create data
+   d. DELETE - Delete data
