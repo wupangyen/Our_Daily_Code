@@ -3,7 +3,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class DuplicatedProduct {
+// time and space complexity 
+
+// time: if there is N element in the given list , we need to loop through all the element once O(N)
+
+// space: we create a set to add non non duplicate elemnt, if there are M non duplicate values the space complexity will be O(M)
+
+public class DuplicatedProducts {
     public static void main(String[]args) {
 
         List<String> name = new ArrayList<String>();
@@ -42,7 +48,7 @@ public class DuplicatedProduct {
         int res = 0;
 
          // create a set 
-         Set<String> set = new HashSet<String>();
+         Set<String> set = new HashSet<>();
         // loop through all the products 
         for(int i = 0; i < price.size(); i++){
 
@@ -85,3 +91,4 @@ output:
 
 
 */
+
