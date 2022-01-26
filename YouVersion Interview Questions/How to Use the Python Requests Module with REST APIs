@@ -22,3 +22,14 @@ Request is made up of the following components:
    b. PUT - Replace data
    c. POST - Create data
    d. DELETE - Delete data
+
+Data: need to include a data payload with the request that includes all data that will be created or modified
+
+Headers: metadata needs to be included with the request, authentication tokens, the content type that should be returned, and any caching policies.
+
+The Response:
+
+Example of a request and a response.
+In the terminal, use curl(stands for Client URL a computer software project providing a library and command-line tool for transferring data using various network protocols)
+make a GET request to the Open Notify API, this API has information about astronauts that are currently in space
+"http://api.open-notify.org/astros.json"
