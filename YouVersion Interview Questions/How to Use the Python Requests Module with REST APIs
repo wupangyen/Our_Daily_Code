@@ -33,3 +33,5 @@ Example of a request and a response.
 In the terminal, use curl(stands for Client URL a computer software project providing a library and command-line tool for transferring data using various network protocols)
 make a GET request to the Open Notify API, this API has information about astronauts that are currently in space
 "http://api.open-notify.org/astros.json"
+
+In Terminal type curl -X GET "http://api.open-notify.org/astros.json"
