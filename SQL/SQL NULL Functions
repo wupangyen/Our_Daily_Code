@@ -1,0 +1,11 @@
+SQL IFNULL(), ISNULL(), COALESCE(), and NVL() Functions
+
+MYSQL 
+The MySQL ISNULL() function lets you return an alternative value if an expression is NULL:
+
+SELECT ProductName, UnitPrice * (UnitsInStock + IFNULL(UnitsOnOrder, 0))
+FROM Products;
+
+or use COALESCE()
+SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder,0))
+FROM Products;
