@@ -1,0 +1,17 @@
+- used to combine the result-set of two or more SELECT statements
+3 points to consider
+  1.every SELECT statement within UNION must have the same number of columns
+  2.The columns must also have similar data types 
+  3. the columns in every SELECT statement must also be in same order 
+
+UNION Syntax
+SELECT column__name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+
+
+For UNION ALL Syntax
+The UNION operator selects only distinct values by default. To allow duplicate values, use UNION ALL:
+SELECT column__name(s) FROM table1
+UNION ALL
+SELECT column_name(s) FROM table2;
