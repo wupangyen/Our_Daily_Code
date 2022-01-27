@@ -15,3 +15,16 @@ The UNION operator selects only distinct values by default. To allow duplicate v
 SELECT column__name(s) FROM table1
 UNION ALL
 SELECT column_name(s) FROM table2;
+
+
+Example
+SELECT 'Customer' AS Type, ContactName, City, Country
+FROM Customers
+UNION
+SELECT 'Supplier', ContactName, City, Country
+FROM Suppliers;
+
+Summary:
+"AS Type" it is an alias - used to give a table or a column a temp name 
+
+temp column named "Type" list whether contact person is a customer or a supplier 
