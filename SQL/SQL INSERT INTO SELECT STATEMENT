@@ -1,0 +1,25 @@
+- copies data from one table and inserts it into another table.
+- requires that the data types in source and target tables match.
+Note: The existing records in the target table are unaffected.
+
+Insert into select syntax
+copy all columns from one table to another table:
+
+INSERT INTO table2
+SELECT * FROM table1
+WHERE condition;
+
+Copy only some columns from one table into another table:
+
+INSERT INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1
+WHERE condition;
+
+
+Example:
+The following SQL statement copies only the German suppliers into "Customers":
+
+INSERT INTO Customers ((CustomerName, CIty,Country)
+SELECT SupplierName, City, Country FROM Suppliers
+WHERE Country ='Germany';
