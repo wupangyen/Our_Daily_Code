@@ -16,3 +16,5 @@ WHERE condition;
 
 - The new table will be created with the column-names and types as defined in the old table. You can create new column names using the AS
 clause.
+
+
