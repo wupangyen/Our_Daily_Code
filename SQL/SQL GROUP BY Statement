@@ -2,6 +2,10 @@ groups rows that have the same val into summary rows, like find the num of custo
 
 often used with aggregate functions(COUNT() MAX() MIN() SUM() AVG()) to group the result-set by one or more columns 
 
+- The SQL GROUP BY clause is used in collaboration with the SELECT statement to arrange identical data into groups. This Group by clause follows the where clause in a SELECT 
+statement and precedes the Order by clause.
+
+
 Group BY Syntax:
 
 
@@ -12,3 +16,4 @@ GROUP BY column_name(s)
 ORDER BY column_name(s)
 
 
+https://www.tutorialspoint.com/sql/sql-group-by.htm
