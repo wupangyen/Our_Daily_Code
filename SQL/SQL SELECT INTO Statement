@@ -1,0 +1,18 @@
+What is does:
+copies data from one table into a new table.
+
+
+Syntax for copy all columns into a new table
+SELECT *
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+
+Syntax for copy some columns into a new table
+SELECT column1,column2,column3...
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+
+- The new table will be created with the column-names and types as defined in the old table. You can create new column names using the AS
+clause.
