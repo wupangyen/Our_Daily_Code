@@ -1,1 +1,14 @@
 groups rows that have the same val into summary rows, like find the num of customers in each country 
+
+often used with aggregate functions(COUNT() MAX() MIN() SUM() AVG()) to group the result-set by one or more columns 
+
+Group BY Syntax:
+
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition 
+GROUP BY column_name(s)
+ORDER BY column_name(s)
+
+
