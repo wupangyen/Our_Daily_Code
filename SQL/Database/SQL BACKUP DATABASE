@@ -1,0 +1,33 @@
+The BACKUP DATABASE statement is used in SQL Server to create a full back up an existing SQL database.
+
+Syntax
+
+BACKUP DATABASE database name
+TO DISK = 'filepath'
+
+- The SQL BACKUP With Differential Statement
+- A differential back up only backs up the parts of the database that have changed since the last full database backup
+
+Syntax:
+
+BACKUP DATABASE databasename
+To DISK = 'filepath'
+WITH DIFFERENTIAL;
+
+Example: The following SQL statement created a full back up of the existing database "testDB" to the D disk :
+
+Example:
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak';
+
+
+BACKUP WITH DIFFERENTIAL EXAMPLE
+The following SQL statement created a differential back up of the database "testDB":
+
+Example:
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak'
+WITH DIFFERENTIAL;
+
+- A differential back up reduces the back up time(since only the changes are backed up )
+
