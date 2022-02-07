@@ -1,2 +1,11 @@
 “Could not create a list of fields for the query. Verify that you can connect to the data source and that your query syntax is correct.”
 https://arcanecode.com/2010/07/30/ssrs-quick-tip-an-item-with-the-same-key-has-already-been-added/
+
+
+SELECT a.Field1, a.Field2, b.Field1
+FROM TABLE A a JOIN TABLEB b on a.Field1 = b.Field1
+
+SQL run through with no problem, we prefixed each column with an alias(table) name.
+But SSRS uses only the column name as the key, not table + column 
+
+The Fix is rename the second column, i.e. b.Field1 AS Field01 
